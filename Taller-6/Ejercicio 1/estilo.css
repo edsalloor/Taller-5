@@ -1,0 +1,157 @@
+body {
+	margin: 0% 25% 0%;
+}
+header > h1 {
+	text-align: center;
+}
+section#section div.bloques {
+	border: 1pt solid #cbccc1;
+	margin: 5px;
+	padding: 15pt;
+}
+div#foto img {
+	border: 1pt solid #cbccc1;
+	margin: 10px;
+}
+div#foto img {
+	width: 30%;
+}
+section#section div#nombre-apellido div {
+	float: left;
+}
+div#nombre-apellido{
+	height: 11em;
+}
+div#datos-personales h2 {
+	clear: both;
+	text-align: center;
+}
+div h3.institucion + p {
+	font-style: italic;
+}
+div.habilidad {
+	display: inline-block;
+	width: 135pt;
+}
+div.habilidad > div{
+	display: inline-block;
+	border-radius: 1em;
+	padding: 6pt;
+}
+div.habilidad div:first-child {
+	background-color: #364a4b;
+	width: 12pt;
+	text-align: center;
+}
+div.habilidad div:last-child {
+	box-shadow: 3px 3px 1px 1px #ccc;
+}
+
+
+@media only screen and (max-width : 480px) {
+	* {
+	    
+	    clear: both;
+	}
+
+	body {
+		margin: 10% 15% 0%;
+	}
+
+	header > h1 {
+		display: none;
+	}
+
+	section#section div.bloques {
+		border: 1pt solid #cbccc1;
+		margin: 15px;
+		padding: 5pt;
+	}
+
+	div.bloques {
+		width: 100% ;
+		background-color: #d4e3fc;
+	}
+
+	div#foto {
+		position: relative;
+		top: -60%;
+		left: 30%;
+		z-index: 1;
+	}
+
+	div#foto img {
+		border: 2pt solid #cbccc1;
+		margin: 0px;
+		width: 50%;
+	}
+
+	div#nombre-apellido{
+		position: relative;
+		top: 65px;
+	}
+
+	div#nombre-apellido ul li:nth-child(-n+2){
+		display: none;
+	}
+
+	div ul li {
+		list-style: none;
+		text-align: center;
+	}
+
+	div#nombre-apellido ul {
+		position: relative;
+		top: -6em;
+		left: 20%;
+	}
+
+	div#nombre-apellido h2 {
+		background-color: #FFFFFF;
+		opacity: 0.7;
+		font-size: 1.2em;
+		text-align: center;
+		position: relative;
+		top: 3em;
+		z-index: 2;
+	}
+
+	#datos-personales h2{
+		display: none;
+	}
+
+	div#datos-personales span{
+		position: relative;
+		left: -5%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	
+	div#educacion div {
+		display: inline-block;
+		width: 100pt;
+		padding: 7pt;
+	}
+
+	div#educacion div:nth-child(3) {
+		position: relative;
+		top: -35pt;
+	}
+
+	div#educacion p {
+		font-size: 0.8em;
+	}
+
+	div.habilidad {
+		display: inline-block;
+		width: 110pt;
+	}
+
+	div{
+		border-radius: 1em;
+	}
+
+}

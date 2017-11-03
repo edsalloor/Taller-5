@@ -1,0 +1,114 @@
+body {
+	font-family: Verdana;
+}
+h1 {
+	font-family: Anton;
+	color: #414239;
+	font-size: 4em;
+}
+div.bloque > h2 {
+	font-family: Lobster;
+	color: #9e0947;
+	font-size: 2.5em;
+}
+div.bloque {
+	border: 1pt dotted #d7d8cb;
+	height: 350pt;
+}
+div.bloque p {
+	text-align: justify;
+}
+div.bloque h3 {
+	color: #ce105c;
+	font-size: 1em;
+}
+li[famoso='principal'] {
+	font-weight: bold;
+}
+li[famoso='secundario'] {
+	font-family: italica;
+}
+div.bloque > span > ul {
+	list-style-image: url('https://goo.gl/6hPSSH');
+}
+span#cartel img:hover {
+	opacity: 0.8;
+}
+span#sinopsis > p{
+	width: 600px;
+}
+span#cartel {
+	float: left;
+}
+span#cartel img {
+	padding-right: 5pt;
+	padding-left: 10pt;
+	width: 80%;
+}
+span.columna {
+	float: left;
+	padding: 5pt;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+	body {
+		background-color: #EC7063;
+		box-sizing: border-box;
+	}
+	h1 {
+		font-weight: bold;		
+		text-align: center;
+	}
+	span#sinopsis, span#cartel {
+		display: none;
+	}
+	section#section div {
+		display: inline-block;
+		width: 350pt;
+		height: 450pt;
+	}
+	section#section div h2 {
+		text-align: center;
+	}
+	span#trailer iframe {
+		font-weight: 30%;
+	}
+	span#reparto ul li {
+		list-style: none;
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 769px) {
+	h1 {
+		font-weight: bold;		
+		text-align: center;
+	}
+	span#sinopsis, span#cartel {
+		display: contents;
+	}
+	span#trailer iframe {
+		display: none;
+	}
+	span#cartel img {
+		padding-right: 5pt;
+		padding-left: 10pt;
+		width: 70%;
+	}
+	span#reparto {
+		display: none;
+	}
+	span#sinopsis {
+		width: 50%;
+	}
+	span#sinopsis p{
+		width: 100%;
+	}
+	span#sinopsis h3 {
+		display: none;
+	}
+	section#section div {
+		display: inline-block;
+		width: 450pt;
+		height: 450pt;
+	}
+}
